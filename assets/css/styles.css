@@ -1,0 +1,12 @@
+@import url("./reset.css");
+
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+
+body {
+    font-family: "RobotoRegular";
+}
+
