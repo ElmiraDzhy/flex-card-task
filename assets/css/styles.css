@@ -25,6 +25,9 @@ body {
     background: linear-gradient(55deg, red,blue);
 }
 
+article + article{
+    margin-top: 200px;
+}
 
 
 

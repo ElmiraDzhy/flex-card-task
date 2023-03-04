@@ -1,0 +1,129 @@
+
+.user-card-landscape{
+    width: 600px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: rgb(255, 255, 255);
+    height: 250px;
+
+    position: relative;
+ 
+
+    border-radius: 5px;
+}
+
+.photo-user-wrapper{
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-bottom-left-radius: 5px;
+}
+
+.user-photo-landscape{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+
+    object-fit: cover;
+    object-position: center;
+
+    position: absolute;
+
+ 
+
+}
+
+.polygon-wrapper{
+    width: 200px;
+    height: 100%;
+    background-color: rgb(40, 107, 107);
+    -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 40% 0, 90% 100%, 0 100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.user-info-wrapper-lndsp{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: left;
+    padding: 50px 30px;
+ 
+ 
+}
+
+.user-info-wrapper-lndsp > .user-name{
+    font-size: 30px;
+    color: black;
+    font-weight: 400;
+    margin: 0;
+}
+
+.user-info-wrapper-lndsp > .user-bio{
+    color: rgb(40, 107, 107);
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 600;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.user-info-wrapper-lndsp > .user-about{
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.card-footer{
+    width: 90%;
+   display: flex;
+   justify-content: center;
+    background-color: rgb(171, 177, 177);
+
+    position: absolute;
+    
+    left: 30px;
+    
+opacity: 0;
+    bottom: -18.5%;
+    padding: 5px 0;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+.user-technology-wrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.svg-django{
+    fill: white;
+}
+
+.user-technology-wrapper > svg{
+    fill: rgb(63, 60, 60);
+}
+
+
+.user-card-landscape:hover{
+    cursor: pointer;
+
+}
+
+.user-card-landscape:hover .card-footer{
+   opacity: 1;
+}

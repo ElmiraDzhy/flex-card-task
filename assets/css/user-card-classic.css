@@ -150,7 +150,7 @@ svg{
     background-color: rgb(55, 54, 94);
 }
 
-svg:hover, .btn:hover{
+.user-social-wrapper > svg:hover, .btn:hover{
     cursor: pointer;
     box-shadow: 0px 0px 7px 3px #c23856;
 }
