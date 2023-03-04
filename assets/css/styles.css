@@ -1,12 +1,31 @@
 @import url("./reset.css");
 
+@import url("./user-card-classic.css");
+@import url("./user-card-landscape.css");
 
-@font-face {
-    font-family: "RobotoRegular";
-    src: url("../fonts/Roboto/Roboto-Regular.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Manjari:wght@100;400;700&display=swap');
 
 body {
-    font-family: "RobotoRegular";
+    font-family: "Manjari", sans-serif;
+} 
+
+/*   */
+
+.cards-container{
+    padding: 100px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: space-around;
+    align-items: center;
+    height:fit-content;
+
+    background-color: blueviolet;
+    background: linear-gradient(55deg, red,blue);
 }
 
+
+
+
+    
