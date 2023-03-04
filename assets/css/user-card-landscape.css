@@ -1,18 +1,17 @@
 
 .user-card-landscape{
-    width: 600px;
+    position: relative;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    background-color: rgb(255, 255, 255);
+    width: 600px;
     height: 250px;
 
-    position: relative;
- 
 
     border-radius: 5px;
+    background-color: rgb(255, 255, 255);
 }
 
 .photo-user-wrapper{
@@ -26,14 +25,16 @@
 }
 
 .user-photo-landscape{
+    position: absolute;
+
     width: 160px;
     height: 160px;
+
     border-radius: 50%;
 
     object-fit: cover;
     object-position: center;
 
-    position: absolute;
 
  
 
@@ -42,11 +43,14 @@
 .polygon-wrapper{
     width: 200px;
     height: 100%;
+
+
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
     background-color: rgb(40, 107, 107);
     -webkit-clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 40% 0, 90% 100%, 0 100%);
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
 
 }
 
@@ -54,26 +58,30 @@
     display: flex;
     flex-direction: column;
     align-content: center;
-    text-align: left;
+
     padding: 50px 30px;
  
+    text-align: left;
  
 }
 
 .user-info-wrapper-lndsp > .user-name{
-    font-size: 30px;
-    color: black;
-    font-weight: 400;
     margin: 0;
+
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
 }
 
 .user-info-wrapper-lndsp > .user-bio{
-    color: rgb(40, 107, 107);
+    padding: 0;
+    padding-bottom: 20px;
+
     font-size: 20px;
     font-style: italic;
     font-weight: 600;
-    padding: 0;
-    padding-bottom: 20px;
+    color: rgb(40, 107, 107);
+
 }
 
 .user-info-wrapper-lndsp > .user-about{
@@ -82,32 +90,37 @@
 }
 
 .card-footer{
-    width: 90%;
-   display: flex;
-   justify-content: center;
-    background-color: rgb(171, 177, 177);
-
     position: absolute;
-    
     left: 30px;
-    
-opacity: 0;
     bottom: -18.5%;
-    padding: 5px 0;
 
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    opacity: 0;
 
     transition-property: all;
     transition-duration: 0.2s;
     transition-timing-function: ease-in;
+
+    width: 90%;
+    padding: 5px 0;
+
+  
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    background-color: rgb(171, 177, 177);
+    
 }
 
 .user-technology-wrapper{
-    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+    width: 70%;
+
 }
 
 .svg-django{
